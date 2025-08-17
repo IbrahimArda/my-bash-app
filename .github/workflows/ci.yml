@@ -24,7 +24,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     
     - name: Build Docker Image
-      run: docker build -t ibardo/my-simple-app:latest
+      run: docker build -t ibardo/my-simple-app:latest .
 
     - name: Push Docker image
-      run: docker push ibardo/my-simple-app:latest
+      run: docker push ibardo/my-simple-app:latest .
