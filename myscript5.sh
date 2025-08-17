@@ -21,8 +21,11 @@ YELLOW="\e[33m"
 BLUE="\e[34m"
 RESET="\e[0m"
 
-LOG_FILE="$HOME/Documents/system_monitor.log"
+#LOG_FILE="$HOME/Documents/system_monitor.log"
+# yukarıdaki log file kısmı github actionda çalışmaz. Github action runner ında # böyle bir dizin yok. Onun yerine ./system_monitor.log ya da /tmp/system_monitor.log yazarsak daha 
+# doğru olur.
 
+LOG_FILE="/tmp/system_monitor.log"
 
 RAM_LIMIT=80
 CPU_LIMIT=1
